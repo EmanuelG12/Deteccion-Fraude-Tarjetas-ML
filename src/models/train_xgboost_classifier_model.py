@@ -28,8 +28,7 @@ def train_xgboost_classfier(X_train, y_train):
     scale_pos_weight=1,  
     use_label_encoder=False,
     eval_metric='logloss',
-    random_state=RANDOM_STATE, 
-    use_label_encoder=False)
+    random_state=RANDOM_STATE)
 
     model.fit(X_train, y_train)
 
